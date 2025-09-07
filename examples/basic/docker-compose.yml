@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  app:
+    image: php:8.3-apache
+    ports:
+      - "8080:80"
+    working_dir: /var/www
+    environment:
+      THREAT_SRC: /app/src
+    volumes:
+      - ../:/var/www                 # <-- MOUNTUJ CAŁE examples/
+      - ../basic/public:/var/www/html
+      - ../../:/app                  # <-- root projektu (z /src)
+    command: apache2-foreground
