@@ -18,7 +18,7 @@ context:
 
     > ⚠️ This library is a *signal generator*. It **does not replace** proper validation/sanitization/escaping, CSP, prepared statements, etc.
 
-includes:
+footer_includes:
   - docs/usage.md
   - docs/api.md
 
