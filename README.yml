@@ -1,0 +1,28 @@
+name: php-threat-detector
+repo_url: https://github.com/rafalmasiarek/php-threat-detector
+license: MIT
+
+badges:
+  - name: Latest Version
+    image: https://img.shields.io/packagist/v/rafalmasiarek/threat-detector.svg
+    url: https://packagist.org/packages/rafalmasiarek/threat-detector
+  - name: License
+    image: https://img.shields.io/github/license/rafalmasiarek/threat-detector
+    url: LICENSE
+  - name: PHP
+    image: https://img.shields.io/badge/PHP-%5E8.1-blue
+
+context:
+  - |
+    Heuristic, **modular** threat detection (signal-only) with **weighted float scoring**, **predefined thresholds**, and **PSR-15 middleware** for PSR-7 applications.
+
+    > ⚠️ This library is a *signal generator*. It **does not replace** proper validation/sanitization/escaping, CSP, prepared statements, etc.
+
+includes:
+  - docs/usage.md
+  - docs/api.md
+
+authors:
+  - name: Rafał Masiarek
+    github: rafalmasiarek
+    website: https://masiarek.pl
